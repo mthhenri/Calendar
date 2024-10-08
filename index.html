@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calendário</title>
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <div style="margin-bottom: 1rem; display: flex; flex-direction: column; gap: 0.5rem;">
+            <button onclick="gerarCalendario()" style="width: 12rem; height: 2rem;">Gerar Calendário</button>
+            <div style="display: flex; gap: 0.5rem;">
+                <div style="display: flex; flex-direction: column;">
+                    <span style="font-weight: bold;">Seleção de Mês:</span>
+                    <input type="month" id="monthSelection" style="width: 10rem;">
+                </div>
+                <div style="display: flex; flex-direction: column;">
+                    <span style="font-weight: bold;">Quantidade:</span>
+                    <input type="number" id="quantitySelector" value="3" style="width: 10rem;">
+                </div>
+                <div style="display: flex; flex-direction: column;">
+                    <span style="font-weight: bold;">Nomes (separados por vírgula):</span>
+                    <input type="text" id="namesSelector" style="width: 20rem;">
+                </div>
+            </div>
+        </div>
+        <div id="calendar" style="display: flex; flex-wrap: wrap; gap: 1rem;"></div>
+    </body>
+</html>
